@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import crypto from 'crypto-js';
+import crypto from 'crypto';
 import moment from 'moment-timezone';
 
 

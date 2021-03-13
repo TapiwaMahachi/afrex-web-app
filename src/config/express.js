@@ -1,5 +1,5 @@
 import express from 'express';
-import {userRouter} from '../api/routes/user.routes.js';
+import router from '../api/routes/index.js';
 
 /**
  *  Express interface
@@ -16,7 +16,7 @@ app.use(express.urlencoded({extended:true}))
 /**
  *  Mount API routes
  */
-app.use('/users', userRouter);
+app.use('/api', router);
 
 /**
  * Error handler Function

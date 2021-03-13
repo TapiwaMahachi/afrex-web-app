@@ -38,19 +38,19 @@ router
 router
     .route('/:userId')
     /**
-     * @api {get} /users/:id Get User
+     * @api {get} api/users/:id Get User
      * @description Get user information
      */
     .get(get)
     /**
-     * @api {patch} /users/:id Update user
+     * @api {patch} api/users/:id Update user
      * @description Update some fields of a document
      */
     .patch(validate(updateUser), update)
     /**
-     * @api {delete} /users/:id Delete user
+     * @api {delete} api/users/:id Delete user
      * @description delete a User
      */
     .delete(remove);
 
-export  { router as userRouter};
+export  { router as userRoutes};

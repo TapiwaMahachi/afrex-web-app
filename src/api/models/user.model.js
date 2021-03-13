@@ -103,7 +103,7 @@ userSchema.method({
     return jwt.sign(
       this.transform(), 
       secretKey,
-      {expiresIn: '8h',}
+      {expiresIn: '15m',}
     ); 
   },
   async passwordMatches(password){
@@ -136,7 +136,7 @@ userSchema.statics ={
         throw error;
       }
     },
-    
+
     /**
      * Find user by email and try to generate JWT
      * @param {User} options user in the db
